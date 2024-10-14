@@ -1,0 +1,63 @@
+#Tab2{
+	background: url("");
+	background-color: lightgoldenrodyellow;
+}
+
+
+.container1 {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+.card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            background-color: lightblue;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .card-title h5 {
+            margin: 0;
+        }
+
+        .card-subtitle {
+            font-size: 14px;
+            color: black;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            background-color: lightorange;
+        }
+
+        .col-md-7 {
+            width: 30%;
+            padding-right: 10px;
+        }
+
+        .col-md {
+            width: 70%;
+        }
+
+        @media (max-width: 767px) {
+            .col-md-7,
+            .col-md {
+                width: 100%;
+            }
+        }
+        td:hover{
+        background-color: #FFDAB9;
+        }

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Pie Calculator Activity</title>
+  <link rel="stylesheet" type="text/css" href="shop.css">
+  <link rel="stylesheet" type="text/css" href="info.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+ 
+</head>
+
+<body style="background-color:white;">
+  <header>
+    <div class="grid-container">
+      <div>
+        <img src="logo.png" class="logo" alt="subject logo"><br>
+        <p>1st Sem AY 2023-2024</p>
+      </div>
+
+      <div class="title">
+        <h2>ADVANCE WEB DEVELOPMENT: FRONT-END</h2>
+        <h2>BSIT 3</h2>
+      </div>
+
+      <div></div>
+
+      <div>
+        <img src="id.png" class="photo" alt="Student Picture">  
+        <p class="name">TAMTAM, JURYN T.</p>
+      </div>
+
+    </div>
+  </header>
+
+  <div id="tabs">
+    <button class="button" onclick="opentab('Tab1')">Employee Profile</button>
+    <button class="button" onclick="opentab('Tab2')"> Basic Information</button>
+    <button class="button" onclick="opentab('Tab3')">Pie Shop</button>
+    <button class="button" onclick="opentab('Tab4')">Button 4</button>
+  </div>
+
+ <div id="Tab1" class="w3-container tab" style="display:none">
+ <div class="grid-container2">
+    <div id="lcolumn" class="grid-item1">
+        <h3>Employee Profile</h3>
+        <hr>
+        <form action="#" method="post">
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required><br>
+
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required><br>
+
+          <label for="mname">Middle Initial:</label>
+          <input type="text" id="mname" name="mname"><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required><br>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required><br>
+
+          <label for="status">Status:</label>
+          <input type="text" id="status" name="status" required><br>
+
+          <label for="sex">Sex:</label>
+          <select id="sex" name="sex" class="form-input">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select><br>
+
+          <label for="rank">Rank:</label>
+          <select id="rank" name="rank">
+            <option value="INST 1">INST 1</option>
+            <option value="INST 2">INST 2</option>
+            <option>INST 3</option>
+            <option>ASSIST 1</option>
+            <option>ASSIST 2</option>
+            <option>ASSIST 3</option>
+            <option>ASSOC 1</option>
+            <option>ASSOC 2</option>
+            <option>ASSOC 3</option>
+            <option>ASSOC 4</option>
+            <option>ASSOC 5</option>
+          </select><br>
+
+          <label for="education">Educational Background:</label>
+          <select id="education" name="education" class="form-input">
+            <option value="Bachelor">Bachelor</option>
+            <option value="Masters">Masters</option>
+            <option value="Doctoral">Doctoral</option>
+          </select><br>
+
+          <label for="course" class="form-label">Course:</label>
+          <input type="text" id="course" name="course"><br>
+          <label for="yearGraduated" class="form-label">Year Graduated:</label>
+          <input type="text" id="yearGraduated" name="yearGraduated" class="form-input"><br>
+          <label for="datehired">Date Hired:</label>
+          <input type="date" id="datehired" name="datehire" required><br>
+        </form> 
+  </div>
+      <div id="rcolumn" class="grid-item2">
+      <div class="output">
+        <h3>Report</h3><hr>
+        <p><b>Full Name:</b> <span id="displayFullName">N/A</span></p>
+        <p><b>Age:</b> <span id="displayAge">N/A</span></p>
+        <p><b>Address:</b> <span id="displayAddress">N/A</span></p>
+        <p><b>Sex:</b> <span id="displaySex">N/A</span></p> 
+        <p><b>Status:</b> <span id="displayStatus">N/A</span></p>
+        <p><b>Educational Background:</b> <span id="displayEducation">N/A</span></p>
+        <p><b>Rank:</b> <span id="displayRank">N/A</span></p>
+        <p><b>Date Hired:</b> <span id="displayDateHired">N/A</span></p>
+      </div>
+  
+  </div>
+</div>
+</div>
+
+
+  <div id="Tab2" class="w3-container tab" style="display:none">
+    
+   <div class="container1">
+        <div class="card">
+            <div class="card-title">
+                <p class="card-subtitle">Basic student information</p>
+            </div>
+
+            <table class="table">
+                <tr>
+                    <td>
+                        <div class="row pt-2 py-2">
+                            <div class="col-md-7"><small><p class="text-muted m-0">SURNAME</p></small></div>
+                            <div class="col-md">TAMTAM</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row pt-2 py-2">
+                            <div class="col-md-4"><small><p class="text-muted m-0">GIVEN NAME</p></small></div>
+                            <div class="col-md">JURYN</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row pt-2 py-2">
+                            <div class="col-md-4"><small><p class="text-muted m-0">MIDDLE NAME</p></small></div>
+                            <div class="col-md">TALABING</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row pt-2 py-2">
+                            <div class="col-md-4"><small><p class="text-muted m-0">SEX</p></small></div>
+                            <div class="col-md">FEMALE</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row pt-2 py-2">
+                            <div class="col-md-4"><small><p class="text-muted m-0">CIVIL STATUS</p></small></div>
+                            <div class="col-md">SINGLE</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row pt-2 py-2">
+                            <div class="col-md-4"><small><p class="text-muted m-0">NATIONALITY</p></small></div>
+                            <div class="col-md">FILIPINO</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+  </div>
+
+  <div id="Tab3" class="w3-container tab" style="display:none">
+    
+<div class="food-container">
+  
+  <div class="item1">
+      
+    <h2>Choose your order</h2>    
+    <h2><b>Flavors</b></h2>
+        <div class="grid-container1">
+          <div class="item1a" style="background-image: url('https://th.bing.com/th/id/OIP.gTye6vgNGF7oBzOmL7NuKAHaGZ?pid=ImgDet&w=539&h=466&rs=1');">
+              <img src="https://th.bing.com/th/id/R.aef65898cd7c41f04d552e7e487c1cd5?rik=KsOSPR4LoTmmCQ&riu=http%3a%2f%2fimages.summitmedia-digital.com%2fyummyph%2fimages%2f2019%2f10%2f15%2fjollibee-buko-pie.jpg&ehk=LM%2feEhhBYxHrSLQN%2b5Mt6ool%2f%2fTKmS3DFoNnbK0QI44%3d&risl=&pid=ImgRaw&r=0" id="flavor0" alt="buko pie" onclick="selectFlavor(0)"> <br>
+                <button onclick="selectFlavor(0)">Buko</button>
+          </div>
+
+          <div class="item2" style="background-image: url('https://th.bing.com/th/id/OIP.gTye6vgNGF7oBzOmL7NuKAHaGZ?pid=ImgDet&w=539&h=466&rs=1');">
+                <img src="https://www.jajaramirez.com/wp-content/uploads/2022/03/44FDC045-3E6A-460F-9860-8AB9B4575689.jpeg" id="flavor1" alt="mango pie" onclick="selectFlavor(1)">
+              <br><button onclick="selectFlavor(1)">Mango</button>
+          </div>
+
+         <div class="item3" style="background-image: url('https://th.bing.com/th/id/OIP.gTye6vgNGF7oBzOmL7NuKAHaGZ?pid=ImgDet&w=539&h=466&rs=1');">
+              <img src="https://2.bp.blogspot.com/-FzavkwCpXic/WwdvbkAPM1I/AAAAAAAAVD4/jb7oG7XIQg8UxpfscI_75y_cW1Lys5mMACLcBGAs/s1600/ube-pie3.jpg" id="flavor2" alt="ube pie" onclick="selectFlavor(2)">
+                  <br><button onclick="selectFlavor(2)">Ube</button>
+         </div>  <br><br>  
+           <div id="order-summary">
+      <h3>Total Price: Php <b><span id="total-price">0.00</span></b></h3>
+      <p><b>Flavor:</b> <span id="flavor-summary">-</span></p>
+      <p><b>Size:</b> <span id="size-summary">-</span></p>
+      <p><b>Toppings: </b><span id="toppings-summary">None</span></p>
+    </div>   
+  </div>
+</div>
+
+  <div class="item2">
+      <h2><b>Sizes</b></h2>
+          <div class="size-option" onclick="selectSize(0)">
+            <img src="https://th.bing.com/th/id/OIP.XiFwklSu6IabFsIMqq-mcgHaHa?pid=ImgDet&w=800&h=800&rs=1" alt="Small">
+            <p id="psize" onclick="selectSize(0)">Small - 35.00</p>
+          </div>
+          <div class="size-option" onclick="selectSize(1)">
+            <img src="https://th.bing.com/th/id/OIP.Kw_ec7qR3fcG7GfTiRPCgQHaEK?pid=ImgDet&w=640&h=360&rs=1" alt="Medium">
+            <p id="psize" onclick="selectSize(1)">Medium - 45.00</p>
+          </div>
+          <div class="size-option" onclick="selectSize(2)">
+            <img src="https://img.grouponcdn.com/seocms/2i7116adj14eoCiYBx8SQLUzXZrq/671x671_Apple_Pie_BUYING_GUIDE_DIFFERENT_TYPES_OF_PIE_012319_ak_jpg-671x671" alt="Large">
+            <p id="psize" onclick="selectSize(3)">Large - 140.00</p>
+          </div>
+  </div>  
+
+
+  <div class="item3">
+      
+       <h2><b>Toppings</b></h2>
+       <p>Php 5.00 each</p>
+      <div id="toppings">  
+          <img src="https://th.bing.com/th/id/OIP.akL0gKtk3n0ry0EJy5TGigAAAA?pid=ImgDet&rs=1" alt="Chocolate" onclick="toggleTopping(0)">
+          <p id="psize" onclick="toggleTopping(0)">Chocolate</p>
+      
+          <img src="https://i.pinimg.com/originals/9a/9b/fd/9a9bfdb3c400499d9ce6dc0d28841648.jpg" alt="Sprinkles" onclick="toggleTopping(1)">
+          <p id="psize" onclick="toggleTopping(1)">Sprinkles</p>
+      
+          <img src="https://www.thegunnysack.com/wp-content/uploads/2020/06/Caramel-Syrup-Recipe.jpg" alt="Caramel Syrup" onclick="toggleTopping(2)">
+          <p id="psize" onclick="toggleTopping(2)">Caramel Syrup</p> 
+
+          <img src="https://joaniesimon.com/wp-content/uploads/2016/01/whipped-cream.jpg" alt="Whipped Cream" onclick="toggleTopping(3)">
+          <p id="psize" onclick="toggleTopping(3)">Whipped Cream</p>
+        
+          <img src="https://www.cheatsheet.com/wp-content/uploads/2017/03/GettyImages-508297424.jpg?x33802" alt="Cheese" onclick="toggleTopping(4)">
+          <p id="psize" onclick="toggleTopping(4)">Cheese</p>
+          </div>
+        </div>  
+      <div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    let selectedFlavor = 0;
+    let selectedSize = 0;
+    let selectedToppings = new Array(6).fill(false);
+
+    function selectFlavor(flavor) {
+      selectedFlavor = flavor;
+      updateFlavorImages();
+      calculatePrice();
+      updateOrderSummary();
+    }
+
+    function selectSize(size) {
+      selectedSize = size;
+      updateSizeImages();
+      calculatePrice();
+      updateOrderSummary();
+    }
+
+    function toggleTopping(topping) {
+      selectedToppings[topping] = !selectedToppings[topping];
+      updateToppingsImages();
+      calculatePrice();
+      updateOrderSummary();
+    }
+
+    function updateFlavorImages() {
+      for (let i = 0; i < 3; i++) {
+        const imgElement = document.getElementById(`flavor${i}`);
+        if (i === selectedFlavor) {
+          imgElement.style.border = "2px solid red";
+        } else {
+          imgElement.style.border = "2px solid transparent";
+        }
+      }
+    }
+
+    function updateSizeImages() {
+      const sizeOptions = document.getElementsByClassName("size-option");
+      for (let i = 0; i < sizeOptions.length; i++) {
+        const imgElement = sizeOptions[i].querySelector("img");
+        if (i === selectedSize) {
+          imgElement.style.border = "2px solid red";
+        } else {
+          imgElement.style.border = "2px solid transparent";
+        }
+      }
+    }
+
+    function updateToppingsImages() {
+      const toppingsImages = document.getElementById("toppings").querySelectorAll("img");
+      toppingsImages.forEach((imgElement, i) => {
+        if (selectedToppings[i]) {
+          imgElement.style.border = "2px solid #FF6F61";
+        } else {
+          imgElement.style.border = "2px solid transparent";
+        }
+      });
+    }
+
+    function calculatePrice() {
+      const toppings = selectedToppings.map((topping, index) => topping ? index : -1).filter(index => index !== -1);
+      const sizePrice = [35.00, 45.00, 140.00][selectedSize];
+      const toppingsPrice = toppings.reduce((total, topping) => total + [5, 5, 5, 5, 5, 5][topping], 0);
+
+      const totalPrice = sizePrice + toppingsPrice;
+      document.getElementById("total-price").textContent =totalPrice.toFixed(2);
+    }
+
+    function updateOrderSummary() {
+      const flavorNames = ["Buko Pie", "Mango Pie", "Ube Pie"];
+      const sizeNames = ["Small", "Medium", "Large"];
+
+      document.getElementById("flavor-summary").textContent = flavorNames[selectedFlavor];
+      document.getElementById("size-summary").textContent = sizeNames[selectedSize];
+
+      const selectedToppingsNames = selectedToppings
+        .map((topping, index) => topping ? document.getElementById("toppings").querySelectorAll("p")[index].textContent : null)
+        .filter(name => name !== null);
+
+      if (selectedToppingsNames.length === 0) {
+        document.getElementById("toppings-summary").textContent = "None";
+      } else {
+        document.getElementById("toppings-summary").textContent = selectedToppingsNames.join(", ");
+      }
+    }
+
+    // Initial setup
+    updateFlavorImages();
+    updateSizeImages();
+    updateToppingsImages();
+    updateOrderSummary();
+  </script>
+
+  <div id="Tab4" class="w3-container tab" style="display:none"></div>
+
+
+  <script>
+    function opentab(openit) {
+      var i;
+      var x = document.getElementsByClassName("tab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(openit).style.display = "block";
+    }
+  </script>
+
+  <script>
+    const form = document.querySelector('form');
+    const displayFullName = document.getElementById('displayFullName');
+    const displayAge = document.getElementById('displayAge');
+    const displayAddress = document.getElementById('displayAddress');
+    const displaySex = document.getElementById('displaySex');
+    const displayEducation = document.getElementById('displayEducation');
+    const displayRank = document.getElementById('displayRank');
+    const displayStatus = document.getElementById('displayStatus');
+    const displayDateHired = document.getElementById('displayDateHired');
+
+    form.addEventListener('input', function () {
+      const lname = document.getElementById('lname').value;
+      const fname = document.getElementById('fname').value;
+      const mname = document.getElementById('mname').value;
+      const age = document.getElementById('age').value;
+      const address = document.getElementById('address').value;
+      const sex = document.getElementById('sex').value;
+      const education = document.getElementById('education').value;
+      const course = document.getElementById('course').value;
+      const rank = document.getElementById('rank').value;
+      const status = document.getElementById('status').value;
+      const dateHired = document.getElementById('datehired').value;
+
+      const fullName = mname ? `${lname}, ${fname} ${mname}` : `${lname}, ${fname}`;
+      displayFullName.textContent = fullName;
+      displayAge.textContent = age;
+      displayAddress.textContent = address;
+      displaySex.textContent = sex;
+      displayEducation.textContent = education === 'Doctoral' ?
+        `Doctoral in ${course}, Graduated in ${yearGraduated}` :
+        `${education} in ${course}`;
+      displayRank.textContent = rank;
+      displayStatus.textContent = status;
+      displayDateHired.textContent = dateHired;
+    });
+  </script>
+
+
+  <footer class="footer">
+    <div>
+      <h3>Instructor: Jim-mar Delos Reyes</h3>
+    </div>
+  </footer>
+</body>
+
+</html>

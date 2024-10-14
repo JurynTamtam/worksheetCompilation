@@ -1,0 +1,153 @@
+     /* form style */
+    form {
+      margin: 10px;
+    }
+
+    label, input, select {
+      margin-bottom: 10px;
+    }
+
+     .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #lcolumn {
+      padding: 20px;
+      background-color: #FFDAB0;
+      border-radius: 10px;
+    }
+
+    #rcolumn {
+      padding: 20px;
+      background-color:#FF9F79; 
+      border-radius: 10px;
+     
+    }
+
+    input{
+      border-radius: 6px;
+      border: transparent;
+      padding: 5px;
+    }
+    input:hover{
+      background-color: lightsalmon;
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: auto auto  ;
+      padding: 20px;
+      background: url("https://th.bing.com/th/id/OIP.iVwWkrNjJlMm4X-X_zBegAHaEw?pid=ImgDet&rs=1");
+      }
+
+
+      /* homepage style */
+    .grid-container {
+      background-color: rgba(255, 87, 34, 0.8);
+      text-align: center;
+      font-size: 10px;
+      display: grid;
+      grid-template-columns: auto;
+      color: white;
+      padding: 2px;
+    }
+
+    .logo {
+      margin-top: 5px;
+      height: auto;
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .photo {
+      height: 140px;
+      width: 120px;
+    }
+
+    .title>h2 {
+      margin-top: 20px;
+      font-family: "Georgia", "Courier New", fantasy;
+          }
+
+    header {
+      background-image: url('https://images3.alphacoders.com/108/1081677.jpg');
+    }
+
+    .footer {
+      background-color: rgba(255, 50, 5, 0.8);
+      color: #ffffff;
+      text-align: center;
+      font-size: 10px;
+      padding: 15px;
+      font-family: "Verdana";
+    }
+
+     #tabs{
+          padding: 2px;
+         background: url("https://th.bing.com/th/id/OIP.iVwWkrNjJlMm4X-X_zBegAHaEw?pid=ImgDet&rs=1");
+        }
+    .button{
+      border: transparent;
+      background-color:rgba(255, 50, 5, 0.8);
+      margin: 5px;
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 6px;
+      transition-duration: 0.4s;
+      }
+
+    .button:hover{
+      background-color:gray;
+      }
+
+    /* Responsive Grid */
+    @media only screen and (min-width: 600px) { /* For tablets and larger screens */
+      .grid-container{
+      grid-template-columns: 200px auto 200px 200px;
+      }
+    }
+
+    @media only screen and (max-width: 599px) { /* For smaller screens, like mobile phones */
+      .grid-container{
+        grid-template-columns: auto;
+      }
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+      @media only screen and (max-width: 599px) {
+      .container, .grid-container2, .food-container, .grid-container1{
+        grid-template-columns: 1fr; /* Change to a single column layout */
+      }
+      
+      form {
+        max-width: 100%; /* Allow the form to take the full width */
+      }
+    }
+
+    /* Adjust styles for smaller screens (e.g., mobile phones) */
+    @media only screen and (max-width: 599px) {
+      .container{
+        flex-direction: column;
+      }
+
+      #tabs {
+        display: flex;
+        flex-direction: column; /* Change to a column layout for tabs */
+      }
+      #tabs button {
+        width: 100%; /* Make each tab button full width */
+        margin: 1px 0; /* Add some space between stacked tabs */
+      }
+      form {
+        max-width: 100%; /* Allow the form to take the full width */
+      }
+    }
